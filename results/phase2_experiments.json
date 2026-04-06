@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Prompt Compression Experiment",
+    "timestamp": "2026-04-06T13:41:14.005Z",
+    "status": "planned"
+  },
+  {
+    "name": "Output Constraint Experiment",
+    "timestamp": "2026-04-06T13:41:14.006Z",
+    "status": "planned"
+  },
+  {
+    "name": "Caching Impact Experiment",
+    "timestamp": "2026-04-06T13:41:14.006Z",
+    "status": "planned"
+  },
+  {
+    "name": "Batch API Economics",
+    "timestamp": "2026-04-06T13:41:14.006Z",
+    "status": "planned"
+  },
+  {
+    "name": "Tool Definition Optimization",
+    "timestamp": "2026-04-06T13:41:14.006Z",
+    "status": "planned"
+  }
+]
