@@ -36,32 +36,44 @@ Scripts de test pour mesurer l'impact réel:
 - Batch economics (cost analysis)
 - Tool definition optimization
 
-### Phase 3: Implementation (À venir)
-Implémentation des leviers optimaux:
+### Phase 3: Implementation 🚀
+Implémentation des leviers optimaux avec vrais tests API:
 
-- [ ] Claude API integration pour compter les tokens réels
-- [ ] Test suite complète
-- [ ] Documentation des patterns gagnants
-- [ ] Calculator de ROI
+- ✅ Claude API integration pour compter les tokens réels
+- ✅ 4 test suites complètes (Compression, Constraints, Tools, System Prompt)
+- ✅ Documentation des patterns gagnants
+- ✅ Calculator de ROI
+- 📄 Voir: `docs/PHASE3_SETUP.md` pour configurer ta clé API
 
-### Phase 4: Best Practices (À venir)
-Guidelines et patterns réutilisables.
+### Phase 4: Best Practices ✅
+Guidelines et patterns réutilisables documentés:
+
+- ✅ 5 patterns clés avec implémentation
+- ✅ ROI calculator (quick decision tree)
+- ✅ Implementation roadmap (4 semaines)
+- ✅ Monitoring guidelines
+- 📄 Voir: `docs/BEST_PRACTICES.md`
 
 ## 📁 Structure
 
 ```
 .
 ├── README.md                      # Ce fichier
+├── .env.phase3                    # Config pour Phase 3 (ta clé API)
 ├── setup_notion.js                # Setup initial Notion (pages + DB)
 ├── scripts/
 │   ├── phase1_research.js         # ✅ Recherche fondamentale
-│   ├── phase2_experiments.js      # 🔄 Expériences pratiques
-│   ├── phase3_implementation.js   # À faire
-│   └── phase4_best_practices.js   # À faire
+│   ├── phase2_experiments.js      # ✅ Expériences pratiques (planning)
+│   ├── phase3_implementation.js   # 🚀 Tests réels API Claude
+│   └── phase4_best_practices.js   # ✅ Patterns & ROI
 ├── results/
-│   └── phase2_experiments.json    # Résultats des expériences
-└── docs/
-    └── findings.md                # Notes de recherche
+│   ├── phase2_experiments.json    # Résultats des expériences
+│   └── phase3_api_tests.json      # Résultats tests API
+├── docs/
+│   ├── PHASE3_SETUP.md            # Guide de configuration Phase 3
+│   ├── BEST_PRACTICES.md          # ✅ Guidelines & patterns
+│   └── findings.md                # Notes de recherche
+└── .gitignore
 ```
 
 ## 🚀 Quickstart
@@ -73,11 +85,35 @@ node setup_notion.js
 # Phase 1: Documentez les findings
 node scripts/phase1_research.js
 
-# Phase 2: Run experiments
+# Phase 2: Run experiments planning
 node scripts/phase2_experiments.js
 
+# Phase 3: Real API testing (NEED YOUR API KEY)
+# 1. Edit .env.phase3 and add your ANTHROPIC_API_KEY
+# 2. Run:
+node scripts/phase3_implementation.js
+
+# Phase 4: Generate best practices & ROI
+node scripts/phase4_best_practices.js
+
 # View results
-cat results/phase2_experiments.json
+cat results/phase3_api_tests.json
+cat docs/BEST_PRACTICES.md
+```
+
+## ⚡ Quick Start for Phase 3
+
+To run the real API tests with actual token measurements:
+
+```bash
+# 1. Get your API key from https://console.anthropic.com/account/keys
+# 2. Edit .env.phase3:
+ANTHROPIC_API_KEY=sk-ant-YOUR_KEY_HERE
+
+# 3. Run the tests:
+node scripts/phase3_implementation.js
+
+# Results will be added to Notion automatically + saved to results/
 ```
 
 ## 💡 Key Findings So Far
